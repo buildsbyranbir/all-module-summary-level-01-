@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Git & GitHub Module</title>
+
+</head>
+
+<body>
+
+    <!-- ===================================================== -->
+    <!-- Module 3: Git & GitHub -->
+    <!-- ===================================================== -->
+
+
+
+    <!-- ===================================================== -->
+    <!-- 3-1 What is Version Control System -->
+    <!-- Git vs GitHub -->
+    <!-- ===================================================== -->
+
+    <h1>Git & GitHub Introduction</h1>
+
+    <!--
+    Version Control System (VCS)
+    code er change track rakhe
+
+    Ajke code likhla
+    kalke vul hoilo
+    আগের version e fire jete parba
+    -->
+
+    <!--
+    Git:
+    local machine e code manage kore
+
+    GitHub:
+    online e code store kore
+
+    Git = tool
+    GitHub = cloud platform
+    -->
+
+
+
+    <!-- ===================================================== -->
+    <!-- 3-2 Create a GitHub Repository -->
+    <!-- ===================================================== -->
+
+    <h2>Create GitHub Repository</h2>
+
+    <ol>
+
+        <li>github.com e account create koro</li>
+
+        <li>New Repository button e click koro</li>
+
+        <li>Repository name dao</li>
+
+        <li>Create Repository e click koro</li>
+
+    </ol>
+
+
+
+    <!-- ===================================================== -->
+    <!-- 3-3 Basic Commands -->
+    <!-- git init, git add, git commit -->
+    <!-- ===================================================== -->
+
+    <h2>Basic Git Commands</h2>
+
+    <pre>
+
+git init
+
+git add .
+
+git commit -m "first commit"
+
+    </pre>
+
+    <!--
+    git init
+    folder ke git project banay
+    -->
+
+    <!--
+    git add .
+    sob file staging area te ney
+    -->
+
+    <!--
+    git commit
+    save point create kore
+    -->
+
+
+
+    <!-- ===================================================== -->
+    <!-- 3-3-2 Set GitHub Account -->
+    <!-- only mac user -->
+    <!-- ===================================================== -->
+
+    <h2>Git Config Setup</h2>
+
+    <pre>
+
+git config --global user.name "Your Name"
+
+git config --global user.email "youremail@gmail.com"
+
+git config --list
+
+    </pre>
+
+
+
+    <!-- ===================================================== -->
+    <!-- 3-4 VS Code Terminal -->
+    <!-- GitHub Desktop -->
+    <!-- ===================================================== -->
+
+    <h2>VS Code Terminal</h2>
+
+    <p>
+
+        VS Code terminal open shortcut:
+        <b>Ctrl + `</b>
+
+    </p>
+
+    <p>
+
+        GitHub Desktop diye graphical way te git use kora jay.
+
+    </p>
+
+
+
+    <!-- ===================================================== -->
+    <!-- 3-5 Push Small Incremental Changes -->
+    <!-- ===================================================== -->
+
+    <h2>Push Code to GitHub</h2>
+
+    <pre>
+
+git remote add origin repository-link
+
+git branch -M main
+
+git push -u origin main
+
+    </pre>
+
+    <!--
+    Workflow:
+    1. code change
+    2. git add .
+    3. git commit
+    4. git push
+    -->
+
+
+
+    <!-- ===================================================== -->
+    <!-- 3-6 Common GitHub Issues -->
+    <!-- ===================================================== -->
+
+    <h2>Common Problems</h2>
+
+    <ul>
+
+        <li>git command kaj na korle git install korte hobe</li>
+
+        <li>push rejected hole age pull korte hobe</li>
+
+        <li>permission denied hole login check korte hobe</li>
+
+    </ul>
+
+    <pre>
+
+git pull origin main
+
+    </pre>
+
+
+
+    <!-- ===================================================== -->
+    <!-- 3-7 Module Summary -->
+    <!-- ===================================================== -->
+
+    <h2>Basic Git Workflow</h2>
+
+    <pre>
+
+git init
+
+git add .
+
+git commit -m "project added"
+
+git remote add origin repository-link
+
+git push -u origin main
+
+    </pre>
+
+
+
+    <!-- ===================================================== -->
+    <!-- 3-8 Advanced -->
+    <!-- Multiple Developer Workflow -->
+    <!-- ===================================================== -->
+
+    <h2>Multiple Developer Workflow</h2>
+
+    <pre>
+
+git clone repository-link
+
+git checkout -b feature-navbar
+
+git add .
+
+git commit -m "navbar added"
+
+git push origin feature-navbar
+
+    </pre>
+
+    <!--
+    tarpor pull request create korte hoy
+    -->
+
+
+
+    <!-- ===================================================== -->
+    <!-- 3-9 Advanced -->
+    <!-- git branch, pull -->
+    <!-- ===================================================== -->
+
+    <h2>Branch & Pull</h2>
+
+    <pre>
+
+git branch
+
+git branch login-page
+
+git checkout login-page
+
+git checkout -b dashboard
+
+git pull origin main
+
+    </pre>
+
+
+
+    <!-- ===================================================== -->
+    <!-- Extra Important Commands -->
+    <!-- ===================================================== -->
+
+    <h2>Extra Commands</h2>
+
+    <pre>
+
+git status
+
+git log
+
+git clone repository-link
+
+git rm file-name
+
+git mv old-name new-name
+
+    </pre>
+
+
+
+    <!-- ===================================================== -->
+    <!-- Practice Workflow -->
+    <!-- ===================================================== -->
+
+    <h2>Practice Task</h2>
+
+    <ol>
+
+        <li>Folder create koro</li>
+
+        <li>git init</li>
+
+        <li>HTML file create koro</li>
+
+        <li>git add .</li>
+
+        <li>git commit -m "html file added"</li>
+
+        <li>GitHub repository connect koro</li>
+
+        <li>git push -u origin main</li>
+
+    </ol>
+
+
+</body>
+
+</html>
