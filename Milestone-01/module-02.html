@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Module Practice</title>
+
+    <style>
+
+        /* ===================================================== */
+        /* 2-1 CSS Types */
+        /* inline, internal, external */
+        /* ===================================================== */
+
+        /*
+        Inline CSS:
+        tag er moddhe style use kora hoy
+
+        Internal CSS:
+        style tag er moddhe lekha hoy
+
+        External CSS:
+        alada css file use kora hoy
+        */
+
+
+        /* ===================================================== */
+        /* 2-2 CSS Text */
+        /* text color, alignment, decoration,
+           font size, family, style */
+        /* ===================================================== */
+
+        .text-style{
+
+            color: blue; /* text color */
+
+            text-align: center; /* text center */
+
+            text-decoration: underline; /* underline */
+
+            font-size: 25px; /* text size */
+
+            font-family: Arial, sans-serif; /* font style */
+
+            font-style: italic; /* italic */
+
+        }
+
+
+
+        /* ===================================================== */
+        /* 2-3 CSS Selectors */
+        /* basic, id, class, universal,
+           tag, grouping, attribute */
+        /* ===================================================== */
+
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* tag selector */
+        h1{
+            color: red;
+        }
+
+        /* class selector */
+        .box{
+            background-color: lightblue;
+        }
+
+        /* id selector */
+        #unique{
+            color: green;
+        }
+
+        /* grouping selector */
+        h2, h3{
+            text-align: center;
+        }
+
+        /* attribute selector */
+        input[type="text"]{
+            border: 2px solid blue;
+        }
+
+
+
+        /* ===================================================== */
+        /* 2-4 Mixed Selectors */
+        /* multiple classes, combined selectors */
+        /* ===================================================== */
+
+        .bg{
+            background-color: yellow;
+        }
+
+        .large{
+            font-size: 30px;
+        }
+
+        /* div er vitore span select */
+        div span{
+            color: purple;
+        }
+
+
+
+        /* ===================================================== */
+        /* 2-5 CSS Borders */
+        /* Border, border-radius, margin */
+        /* ===================================================== */
+
+        .border-box{
+
+            border: 3px solid black;
+
+            border-radius: 15px;
+
+            margin: 20px;
+
+            padding: 20px;
+
+        }
+
+
+
+        /* ===================================================== */
+        /* 2-6 CSS Box Model */
+        /* padding, border, content,
+           height, width */
+        /* ===================================================== */
+
+        .model{
+
+            width: 300px;
+
+            height: 150px;
+
+            padding: 20px;
+
+            border: 5px solid red;
+
+            margin: 20px;
+
+        }
+
+
+
+        /* ===================================================== */
+        /* 2-7 CSS Display */
+        /* none, hidden, inline,
+           block, inline-block, box-shadow */
+        /* ===================================================== */
+
+        .inline{
+            display: inline;
+            background-color: pink;
+        }
+
+        .block{
+            display: block;
+            background-color: lightgreen;
+        }
+
+        .inline-block{
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            background-color: orange;
+        }
+
+        .hidden{
+            visibility: hidden;
+        }
+
+        .none{
+            display: none;
+        }
+
+        .shadow{
+
+            box-shadow: 5px 5px 10px gray;
+
+            padding: 20px;
+
+            margin: 20px;
+
+        }
+
+
+
+        /* ===================================================== */
+        /* 2-8 CSS Background */
+        /* color, image, repeat,
+           position, size */
+        /* ===================================================== */
+
+        .background{
+
+            background-color: lightgray;
+
+            background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+
+            background-repeat: no-repeat;
+
+            background-position: center;
+
+            background-size: cover;
+
+            height: 300px;
+
+            color: white;
+
+        }
+
+
+
+        /* ===================================================== */
+        /* 2-9 CSS Overview */
+        /* Module Summary and practice */
+        /* ===================================================== */
+
+        /*
+        CSS diye design kora hoy
+
+        Important Topics:
+        1. Selector
+        2. Color
+        3. Margin
+        4. Padding
+        5. Border
+        6. Display
+        7. Background
+        */
+
+
+
+        /* ===================================================== */
+        /* 2-10 CSS Selector [Animated] */
+        /* ===================================================== */
+
+        .animated{
+
+            width: 150px;
+
+            height: 150px;
+
+            background-color: tomato;
+
+            transition: 1s;
+
+        }
+
+        .animated:hover{
+
+            background-color: blue;
+
+            transform: rotate(360deg);
+
+            border-radius: 50%;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <!-- ===================================================== -->
+    <!-- 2-1 Inline CSS Example -->
+    <!-- ===================================================== -->
+
+    <h1 style="color: blue;">
+        This is Inline CSS
+    </h1>
+
+
+
+    <!-- ===================================================== -->
+    <!-- 2-2 CSS Text -->
+    <!-- ===================================================== -->
+
+    <p class="text-style">
+        This is styled text
+    </p>
+
+
+
+    <!-- ===================================================== -->
+    <!-- 2-3 CSS Selectors -->
+    <!-- ===================================================== -->
+
+    <div class="box">
+        Class Selector Example
+    </div>
+
+    <h2 id="unique">
+        ID Selector Example
+    </h2>
+
+    <input type="text" placeholder="Type here">
+
+
+
+    <!-- ===================================================== -->
+    <!-- 2-4 Mixed Selectors -->
+    <!-- ===================================================== -->
+
+    <p class="bg large">
+        Multiple class use kora hoise
+    </p>
+
+    <div>
+        <span>
+            Div er vitore span
+        </span>
+    </div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- 2-5 CSS Borders -->
+    <!-- ===================================================== -->
+
+    <div class="border-box">
+        Border Example
+    </div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- 2-6 CSS Box Model -->
+    <!-- ===================================================== -->
+
+    <div class="model">
+        CSS Box Model Example
+    </div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- 2-7 CSS Display -->
+    <!-- ===================================================== -->
+
+    <span class="inline">
+        Inline Element
+    </span>
+
+    <div class="block">
+        Block Element
+    </div>
+
+    <div class="inline-block">
+        Inline Block
+    </div>
+
+    <div class="shadow">
+        Box Shadow Example
+    </div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- 2-8 CSS Background -->
+    <!-- ===================================================== -->
+
+    <div class="background">
+
+        <h2>
+            Background Image Example
+        </h2>
+
+    </div>
+
+
+
+    <!-- ===================================================== -->
+    <!-- 2-9 Practice Task -->
+    <!-- ===================================================== -->
+
+    <button>
+        Click Me
+    </button>
+
+    <p>
+        Practice CSS Everyday
+    </p>
+
+
+
+    <!-- ===================================================== -->
+    <!-- 2-10 Animation -->
+    <!-- ===================================================== -->
+
+    <div class="animated">
+
+    </div>
+
+
+</body>
+
+</html>
